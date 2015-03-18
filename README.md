@@ -1,7 +1,7 @@
 # services
 Mac OS X services
 
-# Copy Without Line Numbers
+## Copy Without Line Numbers
 Copy a code block without line numbers.
 
 ## Tidy HTML
