@@ -1,5 +1,5 @@
-# services
-Mac OS X services
+# Services
+Mac OS X Services
 
 ## Copy Without Line Numbers
 Copy a code block without line numbers.
