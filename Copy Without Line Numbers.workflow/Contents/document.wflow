@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.1</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
 	<string>2.5</string>
 	<key>AMDocumentVersion</key>
@@ -59,8 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string># Copy code without line numbers. Meant to be run as a Mac OS X service.
-
+					<string># Copy code without line numbers.
 cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -174,7 +173,7 @@ cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>378.000000:253.000000</string>
+				<string>288.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>

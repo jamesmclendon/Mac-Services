@@ -15,7 +15,16 @@ Requires GNU date (`brew install coreutils`).
 
 ## Sort
 
-Sort selected text alphabetically.
+Sort selected text. If input is already sorted, reverse the order.
+
+## Rename
+
+Batch rename files with Automator's Rename action. Similar to the "Rename" feature in Yosemite's Finder, with more features:
+
+- Customizable date/time and sequential numbering formats.
+- Add text as extension.
+- Change case.
+- Replace text in fullname, basename only, or extension only.
 
 ## Case - lower & Case - UPPER
 
