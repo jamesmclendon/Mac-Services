@@ -2,7 +2,7 @@
 
 ## Copy Without Line Numbers
 
-Copy a code block without line numbers.
+Copy a code block without copying the line numbers.
 
 ## Tidy HTML
 
