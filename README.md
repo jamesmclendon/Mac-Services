@@ -26,6 +26,6 @@ Batch rename files with Automator's Rename action. Similar to the "Rename" featu
 - Change case.
 - Replace text in fullname, basename only, or extension only.
 
-## Case - lower & Case - UPPER
+## Toggle Case 
 
-Convert selected text to lower or uppercase.
+If capital letters are present convert to lowercase, otherwise convert to UPPERCASE.

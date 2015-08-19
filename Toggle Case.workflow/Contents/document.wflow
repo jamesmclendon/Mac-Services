@@ -59,11 +59,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>cat | tr A-Z a-z</string>
+					<string>string="$@"
+if [[ $string == *[A-Z]* ]]; then
+	echo "$string" | tr A-Z a-z
+else
+	echo "$string" | tr a-z A-Z
+fi</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>shell</key>
 					<string>/bin/bash</string>
 					<key>source</key>
@@ -172,7 +177,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>248.000000:253.000000</string>
+				<string>289.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
