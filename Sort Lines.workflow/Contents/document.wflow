@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.2</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -59,12 +59,17 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string># Copy code without line numbers.
-cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
+					<string># Sort selected text. If input is already sorted, reverse the order.
+
+if [[ $(printf "$@" | sort) != $(printf "$@") ]]; then
+	printf "$@" | sort
+else
+	printf "$@" | sort -r
+fi</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>shell</key>
 					<string>/bin/bash</string>
 					<key>source</key>
@@ -85,7 +90,7 @@ cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>38ACB952-3C0D-4F51-9FBA-65D418F9D36F</string>
+				<string>7836C3FA-6A65-4CB5-A0B7-746D25B9EC0E</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
@@ -95,9 +100,9 @@ cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>18FEADFE-6BC3-4B00-8714-B234083D2323</string>
+				<string>C5F9868D-D03C-4879-A1AE-7E2F1F4C515C</string>
 				<key>UUID</key>
-				<string>17A40E3B-10E3-4E2D-B1D5-3C7569B12AA0</string>
+				<string>F6C64570-C12C-4A5A-8A3E-6081FF8FE882</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -173,7 +178,7 @@ cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>288.000000:253.000000</string>
+				<string>288.000000:508.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -188,7 +193,7 @@ cat | sed -e 's/^ //g' -e 's/^[ 0-9]*//g' | pbcopy</string>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.text</string>
 		<key>serviceOutputTypeIdentifier</key>
-		<string>com.apple.Automator.nothing</string>
+		<string>com.apple.Automator.text</string>
 		<key>serviceProcessesInput</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
